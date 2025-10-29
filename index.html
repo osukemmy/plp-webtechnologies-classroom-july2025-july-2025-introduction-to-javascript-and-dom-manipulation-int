@@ -1,95 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunrise Homeschool</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"> <!-- Make sure CSS file is named style.css -->
 </head>
 <body>
-  <!-- ===== Header ===== -->
+
   <header>
-    <h1>Welcome to Sunrise Homeschool</h1>
-    <p>Empowering learners through creativity, curiosity, and community.</p>
+    <h1>🌅 Sunrise Homeschool</h1>
+    <p>Learning from the comfort of your home</p>
   </header>
 
-  <!-- ===== About Section ===== -->
-  <section id="about">
+  <section>
     <h2>About Us</h2>
-    <p>
-      Sunrise Homeschool provides a supportive learning environment where every child is encouraged 
-      to explore their passions and grow academically, socially, and emotionally. We believe in 
-      personalized learning and nurturing the unique potential of every learner.
-    </p>
+    <p>Sunrise Homeschool provides quality and personalized education for learners from diverse backgrounds. 
+       We focus on holistic growth, nurturing curiosity, creativity, and critical thinking. 
+       With flexible learning paths and professional teachers, our goal is to prepare learners for success both locally and globally.</p>
+  </section>
+
+  <section>
+    <h2>Curriculum Offered</h2>
     <ul>
-      <li>Hands-on learning experiences</li>
-      <li>Inquiry-based curriculum</li>
-      <li>Global citizenship and values-based education</li>
+      <li>British National Curriculum (BNC)</li>
+      <li>International General Certificate of Secondary Education (IGCSE)</li>
+      <li>International Baccalaureate (IB)</li>
+      <li>Competency-Based Curriculum (CBC - Kenya)</li>
     </ul>
   </section>
 
-  <!-- ===== Programs Section ===== -->
-  <section id="programs">
-    <h2>Our Programs</h2>
+  <section>
+    <h2>Subjects Offered</h2>
+    <ul>
+      <li>Mathematics</li>
+      <li>Biology, Chemistry, Physics</li>
+      <li>English, Kiswahili & Foreign Languages</li>
+      <li>History, Geography</li>
+      <li>ICT / Computer Science</li>
+      <li>Business Studies / Economics</li>
+      <li>Religious Studies / Philosophy</li>
+      <li>Art, Music, Drama</li>
+      <li>Physical Education</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>🌐 Online & Virtual Classes</li>
+      <li>🏡 Home-Based Learning</li>
+    </ul>
     <table>
-      <thead>
-        <tr>
-          <th>Program</th>
-          <th>Age Group</th>
-          <th>Focus Area</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Early Learners</td>
-          <td>5 - 8 years</td>
-          <td>Basic Literacy and Numeracy</td>
-        </tr>
-        <tr>
-          <td>Junior Explorers</td>
-          <td>9 - 12 years</td>
-          <td>STEM & Inquiry Projects</td>
-        </tr>
-        <tr>
-          <td>Young Innovators</td>
-          <td>13 - 16 years</td>
-          <td>Creative Arts, Coding & Leadership</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th>Curriculum</th>
+        <th>Mode</th>
+        <th>Price (per term)</th>
+      </tr>
+      <tr>
+        <td>BNC</td>
+        <td>Online</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>IGCSE</td>
+        <td>Virtual / Home-Based</td>
+        <td>$700</td>
+      </tr>
+      <tr>
+        <td>IB</td>
+        <td>Online</td>
+        <td>$800</td>
+      </tr>
+      <tr>
+        <td>CBC</td>
+        <td>Home-Based</td>
+        <td>$400</td>
+      </tr>
     </table>
   </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Fill out the form below to reach the Sunrise Homeschool team.</p>
-
-    <form id="contactForm">
-      <fieldset>
-        <legend>Send us a message</legend>
-
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
-
-        <button type="submit">Send Message</button>
-      </fieldset>
-    </form>
-
-    <a href="#" class="contact-btn">Learn More</a>
+  <section>
+    <h2>Admission & Registration</h2>
+    <p>Enrollment at Sunrise Homeschool is simple and personalized. We require:</p>
+    <ul>
+      <li>Student and Parent Interviews (to understand learning needs)</li>
+      <li>Previous school records or reports</li>
+      <li>Birth Certificate and Identification Documents</li>
+      <li>Proof of residence (for home-based learners)</li>
+      <li>Commitment to learning agreement signed by parents/guardians</li>
+    </ul>
   </section>
 
-  <!-- ===== Footer ===== -->
+  <section>
+    <h2>Our Teachers</h2>
+    <p>Our teaching staff are:</p>
+    <ul>
+      <li>Fully qualified and registered with the Teachers Service Commission (TSC)</li>
+      <li>Certified by international education bodies for IGCSE and IB programs</li>
+      <li>Experienced in blended and online learning</li>
+      <li>Passionate mentors who guide learners holistically</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Enrollment Form</h2>
+    <form action="https://formsubmit.co/ruthosoro2@gmail.com" method="POST">
+      <fieldset>
+        <legend>Student Information</legend>
+        <label for="studentName">Full Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="curriculum">Preferred Curriculum:</label>
+        <select id="curriculum" name="curriculum" required>
+          <option value="">--Select--</option>
+          <option value="BNC">BNC</option>
+          <option value="IGCSE">IGCSE</option>
+          <option value="IB">IB</option>
+          <option value="CBC">CBC</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parent/Guardian Information</legend>
+        <label for="parentName">Parent Name:</label>
+        <input type="text" id="parentName" name="parentName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required placeholder="+254...">
+      </fieldset>
+
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://osukemmy.github.io/sunrise-homeschool-webpage/thank-you.html">
+
+      <button type="submit">Submit Enrollment</button>
+    </form>
+  </section>
+
+  <a href="mailto:ruthosoro2@gmail.com" class="contact-btn">📩 Get in Touch</a>
+  <p style="text-align:center;">Call us: +254795123988</p>
+
   <footer>
-    <p>&copy; 2025 Sunrise Homeschool | All Rights Reserved</p>
+    <p>&copy; 2025 Sunrise Homeschool. All Rights Reserved.</p>
   </footer>
 
-  <!-- ===== JavaScript Link ===== -->
+  <!-- Link your JS file -->
   <script src="script.js"></script>
 </body>
 </html>

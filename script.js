@@ -1,52 +1,39 @@
-// ====== DOMContentLoaded ensures the script runs after HTML loads ======
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Welcome to Sunrise Homeschool!");
+// ===== Part 1: Console log for JS check =====
+console.log("JavaScript is running!");
 
-  // ====== Example 1: Change header color on click ======
-  const header = document.querySelector("header");
-  header.addEventListener("click", () => {
-    header.style.backgroundColor = "#ffb84d";
-    alert("You clicked the header! 🌞");
-  });
+// ===== Part 2: Change header color on click =====
+const header = document.querySelector("header");
+header.addEventListener("click", () => {
+  header.style.backgroundColor = header.style.backgroundColor === "lightblue" ? "#ffcc66" : "lightblue";
+});
 
-  // ====== Example 2: Form submission handling ======
-  const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); // prevent page reload
+// ===== Part 3: Toggle form visibility =====
+const formSection = document.querySelector("form");
+const toggleBtn = document.createElement("button");
+toggleBtn.textContent = "Show/Hide Enrollment Form";
+toggleBtn.style.display = "block";
+toggleBtn.style.margin = "20px auto";
+toggleBtn.style.padding = "10px";
+toggleBtn.style.backgroundColor = "#cc6600";
+toggleBtn.style.color = "#fff";
+toggleBtn.style.border = "none";
+toggleBtn.style.borderRadius = "5px";
+toggleBtn.style.cursor = "pointer";
 
-      // Get input values
-      const name = document.querySelector("#name").value;
-      const email = document.querySelector("#email").value;
+formSection.parentNode.insertBefore(toggleBtn, formSection);
 
-      // Simple validation
-      if (name === "" || email === "") {
-        alert("Please fill in all fields before submitting!");
-      } else {
-        alert(`Thank you, ${name}! Your message has been received.`);
-        form.reset(); // Clear the form
-      }
-    });
-  }
-
-  // ====== Example 3: Dynamic content insertion ======
-  const messageSection = document.querySelector("section");
-  if (messageSection) {
-    const message = document.createElement("p");
-    message.textContent = "✨ Learning is a lifelong adventure — join us at Sunrise Homeschool!";
-    message.style.textAlign = "center";
-    message.style.fontStyle = "italic";
-    messageSection.appendChild(message);
-  }
-
-  // ====== Example 4: Button interaction ======
-  const contactBtn = document.querySelector(".contact-btn");
-  if (contactBtn) {
-    contactBtn.addEventListener("mouseover", () => {
-      contactBtn.style.backgroundColor = "#ff9933";
-    });
-    contactBtn.addEventListener("mouseout", () => {
-      contactBtn.style.backgroundColor = "#cc6600";
-    });
+toggleBtn.addEventListener("click", () => {
+  if (formSection.style.display === "none") {
+    formSection.style.display = "block";
+  } else {
+    formSection.style.display = "none";
   }
 });
+
+// ===== Part 4: Highlight table rows on hover =====
+const tableRows = document.querySelectorAll("table tr:not(:first-child)");
+tableRows.forEach(row => {
+  row.addEventListener("mouseenter", () => row.style.backgroundColor = "#ffe0b3");
+  row.addEventListener("mouseleave", () => row.style.backgroundColor = "#fff2e6");
+});
+
